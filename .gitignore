@@ -1,0 +1,10 @@
+# Ignore everything
+*
+# Except specific folders or files
+!.gitignore
+!CLAUDE.md
+!agents
+!agents/*
+!commands
+!commands/*
+!settings.json
