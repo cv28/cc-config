@@ -6,17 +6,9 @@
     ],
     "deny": []
   },
-  "hooks": {
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/usr/bin/afplay /System/Library/Sounds/Glass.aiff\""
-          }
-        ]
-      }
-    ]
-  }
+  "hooks": {},
+  "feedbackSurveyState": {
+    "lastShownTime": 1754080822826
+  },
+  "$schema": "https://json.schemastore.org/claude-code-settings.json"
 }
