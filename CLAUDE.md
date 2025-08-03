@@ -8,11 +8,12 @@
 # Guidelines
 - composition over inheritance
 - follow KISS, YAGNI, and SOLID principles
-- Clean, concise, PEP8 code
+- follow zen of python
+- clean, concise, PEP8 code
 - No overengineering or excessive comments
 - Typecheck after each major change
 
 
 # workflow
 - all conversation in Chinese
-- for all request I gave you, record our conversation to @conversation/request_\d\d\d\d.md
+- For every request I make, record the full conversation to file `conversation/request_{4-digit-index}_{brief-description}.md` with strictly ascending index
