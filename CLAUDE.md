@@ -1,10 +1,3 @@
-# if you're one of the following sub-agent in frame, build, review, and debug, ignore this section. Otherwise for any task received, do
-- use sub agents frame, build, and review to have group meeting to analyze the request and align the plan, explain it to me before any coding
-- use frame sub agent to analyze the request and propose architecture
-- use build sub agent to implement
-- use review sub agent to review recent changes
-- use debug sub agent to investigate error and run test
-
 # Guidelines
 - composition over inheritance
 - follow KISS, YAGNI, and SOLID principles
@@ -17,4 +10,4 @@
 
 # workflow
 - all conversation in Chinese
-- For every request I make, record the full conversation to file `conversation/request_{4-digit-index}_{brief-description}.md` with strictly ascending index
+- For each request, save the entire conversation to `conversation/request_{####}_{brief-description}.md`, where `{####}` is a zero-padded, strictly ascending index. Before creating a new file, always check the highest existing index to determine the next number.
