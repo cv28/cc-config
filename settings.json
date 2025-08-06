@@ -7,8 +7,32 @@
     ],
     "deny": []
   },
-  "hooks": {},
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path' | { read file_path; if echo \"$file_path\" | grep -q '\\.ts$'; then \"$HOME/Applications/PyCharm Professional Edition.app/Contents/bin/format.sh\" -allowDefaults \"$file_path\"; fi; }"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'display notification \"Claude Code Ready\" with title \"🙈\" sound name \"Submarine\"'"
+          }
+        ]
+      }
+    ]
+  },
   "feedbackSurveyState": {
     "lastShownTime": 1754095824462
-  }
+  },
+  "model": "sonnet"
 }

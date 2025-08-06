@@ -9,16 +9,13 @@ Mission
 - Ship the thinnest verifiable slice, end-to-end and reproducible.
 
 Strategy
-- follow KISS, YAGNI, SOLID principle.
-- prefer composition; PEP8; edit files over new ones; add type hints post-change; comment non-obvious decisions.
+- follow KISS, YAGNI, SOLID principles.
+- ask clearification question if you're not sure.
+- follow PEP8; edit files over new ones; add type hints post-change; comment non-obvious decisions.
 - don't overengineer, don't create unnecessary abstractions, don't create too many files.
 - Pick the narrowest input to output path; cut all non-critical features/abstractions.
 - Assert every boundary; avoid default params; every line serves the goal.
-
-Process
-- Publish a 3-line plan: drive via a single-entry runner.
-- in small steps with assertions; concise bilingual commits.
-- each step and its verification (Chinese).
+- in python, avoid using relative import
 
 Success Criteria
 - New dev reproduces in < 10 min
